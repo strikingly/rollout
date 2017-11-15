@@ -49,7 +49,7 @@ class Rollout
     end
 
     def remove_locale(locale)
-      @locales = @locales.select { |l| l.split(":")[0] == locale }
+      @locales = @locales.select { |l| l.split(":")[0] != locale }
     end
 
     def clear
